@@ -1,0 +1,25 @@
+{
+  "name": "saucedemo",
+  "version": "1.0.0",
+  "description": "Selenium webdriver with mochawesome reporting",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 20000 --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=report,html=true,json=true",
+    "test:spec": "mocha test/*.spec.js --timeout 20000 --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=report,html=true,json=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "log4js": "^6.9.1",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "selenium-webdriver": "^4.23.0",
+    "chromedriver": "^129.0.0",
+    "dotenv": "^16.4.5"
+  }
+}
